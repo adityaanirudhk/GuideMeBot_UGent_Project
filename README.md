@@ -1,6 +1,5 @@
 # GuideMeBot-Group3
 
-Robotics project of group 3.
 
 Our project aims to develop an autonomous indoor Help Robot capable of guiding students (international, for example) or visitors around an indoor university building. For our project, we will focus on the ground floor of the iGent building, or a portion of this floor if the space is too large for WiFi signals to convey. The robot will interact through computer input to determine the destination, and then speak during navigation, with a microphone connected to a laptop resting on top of the TurtleBot. To choose a destination to go to, the user will press an input key corresponding to the desired location, with the computer displaying all possible locations and their respective keys. The robot will autonomously navigate to the chosen location, such as a specific classroom. Using ROS 2 navigation and localization packages, the TurtleBot will plan and execute safe paths, avoiding obstacles such as people or furniture. Obstacle avoidance will take place during navigation so that the robot will not run into anything that moves into its path, nor any obstacle pre-set in the environment. The robot will also communicate politely, confirming destinations before moving, and provide vocal feedback upon arrival. The robot will engage in small talk to ensure that the subject is following the robot’s navigation. This project demonstrates autonomous localization, navigation, obstacle avoidance, and human-robot social interaction.
 
@@ -94,7 +93,9 @@ ros2 launch turtlebot4_viz view_robot.launch.py
 # run the GUI node
 ros2 run guide_me_bot gui_navigator
 ```
-<video controls src="GUI.mp4" title="Title"></video>
+The following is how the GUI would look:
+<img width="1272" height="677" alt="image" src="https://github.com/user-attachments/assets/1932f4de-bf73-4cef-a4b0-6a232b99f579" />
+
 
 RViz: use the `2D Pose Estimate` (or `Publish Pose`) tool to set the AMCL initial pose interactively.
 
