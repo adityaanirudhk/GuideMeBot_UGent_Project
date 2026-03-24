@@ -1,0 +1,18 @@
+rclpy
+numpy
+pyttsx3
+SpeechRecognition
+pyaudio
+pynput
+pywhispercpp
+
+# python3 -m pip install --upgrade google-cloud-dialogflow
+google-cloud-dialogflow
+
+flask
+openai
+requests
+dotenv
+
+# sudo snap install ngrok
+ngrok
