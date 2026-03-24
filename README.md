@@ -120,7 +120,7 @@ Behavior notes:
 ## Connection to robot via Ethernet
 We could not get this dual connection working properly, so do not necessarily expect these steps to work.
 
-# i TurtleBot4 + Internet (Windows 11 + WSL2 + ROS 2 Humble)
+# i) TurtleBot4 + Internet (Windows 11 + WSL2 + ROS 2 Humble)
 This setup keeps ROS 2 communication on a dedicated Ethernet link to the TurtleBot4 while keeping your laptop on eduroam for full internet access.[web:285]  
 It also uses a Fast DDS Discovery Server so ROS 2 discovery works reliably from WSL2 without relying on multicast.[web:273]
 
@@ -129,7 +129,7 @@ The TurtleBot4 Raspberry Pi Ethernet interface uses a static IP `192.168.185.3`,
 On Windows 11, set the Ethernet adapter IPv4 to **Manual** and choose an address that is not `192.168.185.3` (example: `192.168.185.10`) with subnet mask `255.255.255.0`.[web:285]  
 Leave the Ethernet **default gateway blank** so your internet continues to route via eduroam Wi‑Fi.[web:232]
 
-# ii Test connectivity (WSL2)
+# ii) Test connectivity (WSL2)
 
 After plugging the Ethernet cable from your laptop to the TurtleBot4 Ethernet port, confirm you can reach the robot at `192.168.185.3`.[web:285]  
 From WSL2:
@@ -137,7 +137,7 @@ From WSL2:
 `ssh ubuntu@192.168.185.3`
 SSH to `ubuntu@192.168.185.3` is the expected TurtleBot4 Ethernet access method.[web:298][web:285]
 
-# iii Configure ROS 2 discovery (Fast DDS)
+# iii) Configure ROS 2 discovery (Fast DDS)
 Start a Fast DDS Discovery Server on the TurtleBot4 (server side).[web:273]  
 `fastdds discovery -i 0`
 
